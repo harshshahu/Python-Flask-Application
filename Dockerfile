@@ -1,8 +1,8 @@
 FROM python:latest
 WORKDIR /app
-COPY requirements.txt
+COPY requirements.txt .
 RUN pip install flask
 RUN pip install --no-cache-dir -r requirements.txt
-COPY ..
+COPY . .
 EXPOSE 5000
 CMD ["python","python.py"]
