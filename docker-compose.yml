@@ -1,0 +1,7 @@
+services:
+  web:
+    image: python-flask-application-image:latest
+    build: .
+    ports:
+      - "5000:5000"
+    
